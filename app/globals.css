@@ -1,26 +1,121 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-stone-50: #F8F6F3;
+  --color-stone-100: #EDE9E4;
+  --color-stone-200: #DDD9D4;
+  --color-stone-300: #C8C2BB;
+  --color-stone-400: #A8A09A;
+  --color-stone-500: #8B8580;
+  --color-stone-600: #6B6560;
+  --color-stone-700: #4A4540;
+  --color-stone-800: #2E2A27;
+  --color-stone-900: #1A1714;
+  --color-stone-950: #0D0B09;
+
+  --color-brass-400: #D4A96A;
+  --color-brass-500: #B8965A;
+  --color-brass-600: #9C7A44;
+
+  --color-canvas: #F8F6F3;
+  --color-ink: #0D0B09;
+
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #F8F6F3;
+  --foreground: #0D0B09;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Editorial typography scale */
+.display-xl {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+
+.display-lg {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(2.25rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.display-md {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(1.75rem, 3.5vw, 3rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+/* Hover underline animation */
+.hover-underline {
+  position: relative;
+}
+
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+/* Image overlay helpers */
+.overlay-dark::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 100%);
+}
+
+/* Form focus styles */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #B8965A;
+}
+
+/* Selection color */
+::selection {
+  background: #B8965A;
+  color: #F8F6F3;
 }
