@@ -112,6 +112,34 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Video */}
+      <section className="bg-stone-950 py-24 lg:py-32">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div className="max-w-xl mb-12">
+            <p className="text-xs tracking-[0.2em] uppercase text-stone-500 mb-4">
+              See The Work
+            </p>
+            <h2
+              className="text-4xl lg:text-5xl text-stone-100 font-light leading-tight"
+              style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+            >
+              Cohen Global in action.
+            </h2>
+          </div>
+          <div className="relative w-full aspect-video">
+            <iframe
+              title="Cohen Global Properties"
+              src="https://player.vimeo.com/video/420915227?h=96174dd80c"
+              className="absolute inset-0 w-full h-full"
+              frameBorder="0"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
+
       {/* History */}
       <section className="bg-stone-100 py-24 lg:py-32">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
@@ -169,6 +197,17 @@ export default function AboutPage() {
                 key={member.name}
                 className="border-t border-stone-200 pt-10"
               >
+                {member.photo && (
+                  <div className="relative w-32 h-32 mb-6 overflow-hidden">
+                    <Image
+                      src={member.photo}
+                      alt={member.name}
+                      fill
+                      className="object-cover object-top grayscale"
+                      sizes="128px"
+                    />
+                  </div>
+                )}
                 <p className="text-[10px] tracking-[0.2em] uppercase text-stone-400 mb-2">
                   {member.title}
                 </p>

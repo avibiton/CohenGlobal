@@ -55,6 +55,7 @@ export const team = [
     title: "President",
     phone: "(917) 468-4315",
     phoneHref: "tel:+19174684315",
+    photo: "/images/team/shlomi-cohen.jpg",
     bio: "Shlomi Cohen has built Cohen Global Properties into a multifaceted real estate corporation encompassing development, construction, property management, and brokerage. An experienced entrepreneur and operator, he brings strategic focus and hands-on leadership to each project the company undertakes—consistently demonstrating an ability to identify opportunity, execute development, and deliver results across the New York City market.",
   },
   {
@@ -62,6 +63,7 @@ export const team = [
     title: "Chief Executive Officer",
     phone: "(516) 312-1668",
     phoneHref: "tel:+15163121668",
+    photo: "/images/team/yona-cohen.jpg",
     bio: "Yona Cohen co-founded Cohen Global and has been central to the company's growth since its inception. Her career began in real estate brokerage, where she developed a comprehensive understanding of New York's residential markets before transitioning to acquisition and development. Over the course of her tenure, she has been instrumental in orchestrating the acquisition and development of over $150 million in real estate assets. Her expertise spans asset management, accounting, operational oversight, development feasibility, financing, and marketing for multifamily properties and residential projects across the five boroughs.",
   },
 ];
