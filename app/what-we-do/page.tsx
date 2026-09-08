@@ -29,8 +29,8 @@ export default function WhatWeDoPage() {
         eyebrow="Our Capabilities"
         title="What We Do"
         subtitle="End-to-end real estate expertise — from acquisition through sale."
-        image="/images/projects/207-prospect-front.jpg"
-        imageAlt="Cohen Global Properties new construction residential building, Brooklyn"
+        image="/images/hero/hero-3.jpg"
+        imageAlt="Cohen Global completed renovation — kitchen and dining, Brooklyn"
         size="md"
       />
 

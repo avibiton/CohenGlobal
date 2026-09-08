@@ -23,8 +23,8 @@ export default function AboutPage() {
         eyebrow="About Cohen Global"
         title="Experience. Execution. New York."
         subtitle="More than two decades of real estate development across New York City's five boroughs."
-        image="/images/projects/207-prospect-front.jpg"
-        imageAlt="Cohen Global Properties new construction building in Brooklyn, New York"
+        image="/images/hero/hero-6.jpg"
+        imageAlt="Cohen Global completed renovation — Crown Heights, Brooklyn living room"
         size="lg"
       />
 

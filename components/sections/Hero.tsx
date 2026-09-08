@@ -16,8 +16,8 @@ export default function Hero() {
         transition={{ duration: 8, ease: "easeOut" }}
       >
         <Image
-          src="/images/projects/207-prospect-front.jpg"
-          alt="Cohen Global Properties new construction development — Brooklyn, New York"
+          src="/images/projects/207-prospect-exterior.jpg"
+          alt="Cohen Global Properties completed development — Brooklyn, New York"
           fill
           className="object-cover"
           priority
