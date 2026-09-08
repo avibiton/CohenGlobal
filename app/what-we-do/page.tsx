@@ -15,11 +15,11 @@ export const metadata: Metadata = {
 };
 
 const images = [
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
-  "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=80",
-  "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80",
-  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
-  "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1200&q=80",
+  "/images/hero/hero-2.jpg",
+  "/images/projects/207-prospect-front.jpg",
+  "/images/hero/hero-1.jpg",
+  "/images/hero/hero-4.jpg",
+  "/images/hero/hero-6.jpg",
 ];
 
 export default function WhatWeDoPage() {
@@ -29,8 +29,8 @@ export default function WhatWeDoPage() {
         eyebrow="Our Capabilities"
         title="What We Do"
         subtitle="End-to-end real estate expertise — from acquisition through sale."
-        image="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1800&q=80"
-        imageAlt="New York City construction and residential development"
+        image="/images/projects/207-prospect-front.jpg"
+        imageAlt="Cohen Global Properties new construction residential building, Brooklyn"
         size="md"
       />
 

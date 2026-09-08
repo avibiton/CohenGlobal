@@ -16,8 +16,8 @@ export default function Hero() {
         transition={{ duration: 8, ease: "easeOut" }}
       >
         <Image
-          src="https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?w=2000&q=85"
-          alt="New York City brownstone residential buildings"
+          src="/images/projects/207-prospect-front.jpg"
+          alt="Cohen Global Properties new construction development — Brooklyn, New York"
           fill
           className="object-cover"
           priority

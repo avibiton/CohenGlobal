@@ -20,8 +20,8 @@ export default function ProjectsPage() {
         eyebrow="Our Work"
         title="Projects & Portfolio"
         subtitle="Completed developments across New York City's five boroughs."
-        image="https://images.unsplash.com/photo-1495568124863-94d40e4fe8bf?w=1800&q=80"
-        imageAlt="New York City residential buildings"
+        image="/images/hero/hero-2.jpg"
+        imageAlt="Cohen Global completed renovation — kitchen with marble countertops and herringbone floors"
         size="md"
       />
 

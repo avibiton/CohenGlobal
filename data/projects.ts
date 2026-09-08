@@ -14,11 +14,33 @@ export type Project = {
   highlights?: string[];
 };
 
-// NOTE: The LLC entity names from the company's corporate structure suggest
-// these addresses. Property details are based solely on verified company information.
-// All project photography is placeholder — replace with actual Cohen Global project photography.
-
 export const projects: Project[] = [
+  {
+    slug: "207-prospect-place",
+    name: "207 Prospect Place",
+    address: "207 Prospect Place",
+    neighborhood: "Crown Heights",
+    borough: "Brooklyn",
+    propertyType: "New Construction",
+    status: "Completed",
+    description:
+      "A completed new construction development in Crown Heights, Brooklyn. This project delivered a modern multi-story residential building with high-quality finishes — including marble countertops, herringbone hardwood floors, chef's kitchens with professional-grade appliances, and renovated brownstone units with preserved original architectural details.",
+    heroImage: "/images/projects/207-prospect-front.jpg",
+    gallery: [
+      "/images/projects/207-prospect-front.jpg",
+      "/images/hero/hero-2.jpg",
+      "/images/hero/hero-1.jpg",
+      "/images/hero/hero-6.jpg",
+      "/images/hero/hero-5.jpg",
+      "/images/hero/hero-4.jpg",
+      "/images/hero/hero-3.jpg",
+      "/images/projects/207-prospect-bathroom.png",
+      "/images/projects/207-prospect-garden.png",
+      "/images/projects/207-prospect-kitchen.png",
+    ],
+    featured: true,
+    highlights: ["Crown Heights, Brooklyn", "New Construction", "Completed"],
+  },
   {
     slug: "1750-dean-street",
     name: "1750 Dean Street",
@@ -29,12 +51,8 @@ export const projects: Project[] = [
     status: "Completed",
     description:
       "A completed residential development in Crown Heights, Brooklyn, bringing quality housing to one of Brooklyn's most dynamic neighborhoods.",
-    heroImage:
-      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1600&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1200&q=80",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
-    ],
+    heroImage: "/images/hero/hero-6.jpg",
+    gallery: ["/images/hero/hero-6.jpg", "/images/hero/hero-5.jpg"],
     featured: true,
     highlights: ["Crown Heights, Brooklyn", "Residential", "Completed"],
   },
@@ -48,11 +66,8 @@ export const projects: Project[] = [
     status: "Completed",
     description:
       "A residential project in Bed-Stuy bringing a newly completed home to a neighborhood experiencing significant investment and growth.",
-    heroImage:
-      "https://images.unsplash.com/photo-1536314675263-2017a89a2ead?w=1600&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1536314675263-2017a89a2ead?w=1200&q=80",
-    ],
+    heroImage: "/images/hero/hero-1.jpg",
+    gallery: ["/images/hero/hero-1.jpg", "/images/hero/hero-2.jpg"],
     featured: true,
     highlights: ["Bed-Stuy, Brooklyn", "Residential", "Completed"],
   },
@@ -66,12 +81,9 @@ export const projects: Project[] = [
     status: "Completed",
     description:
       "A completed residential project in the South Bronx, representing Cohen Global's commitment to creating quality housing across all five boroughs.",
-    heroImage:
-      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80",
-    ],
-    featured: true,
+    heroImage: "/images/hero/hero-4.jpg",
+    gallery: ["/images/hero/hero-4.jpg"],
+    featured: false,
     highlights: ["South Bronx", "Residential", "Completed"],
   },
   {
@@ -84,8 +96,7 @@ export const projects: Project[] = [
     status: "Completed",
     description:
       "A residential development in Mott Haven, contributing to the growing wave of quality housing in one of the Bronx's most active neighborhoods.",
-    heroImage:
-      "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=1600&q=80",
+    heroImage: "/images/hero/hero-5.jpg",
     featured: false,
     highlights: ["Mott Haven, The Bronx", "Residential", "Completed"],
   },
@@ -95,12 +106,11 @@ export const projects: Project[] = [
     address: "72 Utica Avenue",
     neighborhood: "Crown Heights",
     borough: "Brooklyn",
-    propertyType: "Residential",
+    propertyType: "Renovation",
     status: "Completed",
     description:
       "A renovated and repositioned residential property on Utica Avenue in Crown Heights, delivered to a first-time buyer through Cohen Global's standard sales process.",
-    heroImage:
-      "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=1600&q=80",
+    heroImage: "/images/hero/hero-3.jpg",
     featured: false,
     highlights: ["Crown Heights, Brooklyn", "Renovation", "Completed"],
   },
@@ -114,8 +124,7 @@ export const projects: Project[] = [
     status: "Completed",
     description:
       "A completed residential project at Lincoln Place in Crown Heights, continuing Cohen Global's long history of quality development in Brooklyn.",
-    heroImage:
-      "https://images.unsplash.com/photo-1464082354059-27db6ce50048?w=1600&q=80",
+    heroImage: "/images/hero/hero-2.jpg",
     featured: false,
     highlights: ["Crown Heights, Brooklyn", "Residential", "Completed"],
   },
@@ -129,8 +138,7 @@ export const projects: Project[] = [
     status: "Completed",
     description:
       "A residential project in Red Hook, Brooklyn — one of the borough's most distinctly positioned neighborhoods — completed to Cohen Global's standard.",
-    heroImage:
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&q=80",
+    heroImage: "/images/projects/207-prospect-exterior.jpg",
     featured: false,
     highlights: ["Red Hook, Brooklyn", "Residential", "Completed"],
   },
@@ -144,8 +152,7 @@ export const projects: Project[] = [
     status: "Completed",
     description:
       "A completed residential project in Hollis, Queens, extending Cohen Global's multi-borough reach into one of Queens' established residential communities.",
-    heroImage:
-      "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=1600&q=80",
+    heroImage: "/images/hero/hero-5.jpg",
     featured: false,
     highlights: ["Hollis, Queens", "Residential", "Completed"],
   },

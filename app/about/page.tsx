@@ -23,8 +23,8 @@ export default function AboutPage() {
         eyebrow="About Cohen Global"
         title="Experience. Execution. New York."
         subtitle="More than two decades of real estate development across New York City's five boroughs."
-        image="https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=1800&q=80"
-        imageAlt="New York City skyline and residential architecture"
+        image="/images/projects/207-prospect-front.jpg"
+        imageAlt="Cohen Global Properties new construction building in Brooklyn, New York"
         size="lg"
       />
 
@@ -73,8 +73,8 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1200&q=80"
-                alt="Brooklyn residential buildings"
+                src="/images/hero/hero-6.jpg"
+                alt="Cohen Global completed renovation — Crown Heights, Brooklyn"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

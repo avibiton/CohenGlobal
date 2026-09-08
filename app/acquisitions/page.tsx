@@ -44,8 +44,8 @@ export default function AcquisitionsPage() {
         eyebrow="Acquisitions"
         title="Have a Property or Development Opportunity?"
         subtitle="We actively acquire residential properties and development sites across New York City's five boroughs."
-        image="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=1800&q=80"
-        imageAlt="Brooklyn residential street with brownstones"
+        image="/images/hero/hero-5.jpg"
+        imageAlt="Cohen Global completed residential project — Brooklyn bedroom with neighborhood view"
         size="md"
       />
 
