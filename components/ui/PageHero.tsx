@@ -24,15 +24,15 @@ export default function PageHero({
   className,
 }: PageHeroProps) {
   const heights = {
-    sm: "min-h-[40vh] lg:min-h-[50vh]",
-    md: "min-h-[55vh] lg:min-h-[65vh]",
-    lg: "min-h-[70vh] lg:min-h-[80vh]",
+    sm: "min-h-[50vh] lg:min-h-[55vh]",
+    md: "min-h-[65vh] lg:min-h-[70vh]",
+    lg: "min-h-[78vh] lg:min-h-[85vh]",
   };
 
   return (
     <section
       className={cn(
-        "relative flex items-end bg-stone-950 overflow-hidden",
+        "relative bg-stone-950 overflow-hidden",
         heights[size],
         className
       )}
@@ -51,7 +51,7 @@ export default function PageHero({
         </>
       )}
 
-      <div className="relative z-10 max-w-[1400px] w-full mx-auto px-6 lg:px-12 pb-16 lg:pb-20">
+      <div className="absolute bottom-0 left-0 right-0 z-10 max-w-[1400px] mx-auto px-6 lg:px-12 pb-16 lg:pb-20">
         {eyebrow && (
           <motion.p
             initial={{ opacity: 0, y: 10 }}

@@ -46,7 +46,7 @@ export default function AcquisitionsPage() {
         subtitle="We actively acquire residential properties and development sites across New York City's five boroughs."
         image="/images/hero/hero-5.jpg"
         imageAlt="Cohen Global completed residential project — Brooklyn bedroom with neighborhood view"
-        size="md"
+        size="lg"
       />
 
       {/* Who We Work With */}
