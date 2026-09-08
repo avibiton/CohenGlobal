@@ -51,7 +51,7 @@ export default function PageHero({
         </>
       )}
 
-      <div className="relative z-10 max-w-[1400px] w-full mx-auto px-6 lg:px-12 pb-16 lg:pb-20 pt-32">
+      <div className="relative z-10 max-w-[1400px] w-full mx-auto px-6 lg:px-12 pb-16 lg:pb-20">
         {eyebrow && (
           <motion.p
             initial={{ opacity: 0, y: 10 }}
