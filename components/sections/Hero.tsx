@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen min-h-[700px] flex items-center justify-start overflow-hidden bg-stone-950">
+    <section className="relative h-screen min-h-[700px] flex items-end justify-start overflow-hidden bg-stone-950">
       {/* Background image with slow zoom */}
       <motion.div
         className="absolute inset-0"
@@ -28,13 +28,13 @@ export default function Hero() {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1400px] w-full mx-auto px-6 lg:px-12">
+      <div className="relative z-10 max-w-[1400px] w-full mx-auto px-6 lg:px-12 pb-16 lg:pb-24">
         <div className="max-w-3xl">
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-xs tracking-[0.3em] uppercase text-brass-400 mb-6"
+            className="hidden lg:block text-xs tracking-[0.3em] uppercase text-brass-400 mb-6"
           >
             New York City Real Estate Development
           </motion.p>
@@ -63,7 +63,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.9 }}
-            className="text-stone-300 text-lg leading-relaxed max-w-lg mb-10"
+            className="text-stone-300 text-lg leading-relaxed max-w-lg mb-8 lg:mb-10"
           >
             Cohen Global Properties is an experienced New York City real estate
             development company focused on acquisition, rehabilitation, and new
